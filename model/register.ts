@@ -4,4 +4,5 @@ export interface register {
     email:    string;
     password: string;
     types:    string;
+    avatar:    string;
 }

@@ -85,7 +85,7 @@ router.get("/graph/:uid", async (req, res) => {
         shoes.sid,
         shoes.name,
         DATE(CURDATE()) AS voteDate,
-        500+SUM(vote.score) as score,
+        0+SUM(vote.score) as score,
         shoes.image
       FROM vote, shoes
       WHERE vote.sid_fk = shoes.sid

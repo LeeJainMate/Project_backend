@@ -5,6 +5,7 @@ import {router as login} from "./api/login";
 import {router as image} from "./api/image";
 import {router as vote} from "./api/vote";
 import {router as ranks} from "./api/ranks";
+import {router as profile} from "./api/profile";
 import bodyParser from "body-parser";
 import cors from "cors";
 
@@ -28,6 +29,7 @@ app.use("/login", login);
 app.use("/img", image);
 app.use("/vote", vote);
 app.use("/ranks", ranks);
+app.use("/profile", profile);
 
 // app.use("/", index);
 // app.use("/trip", trip);
